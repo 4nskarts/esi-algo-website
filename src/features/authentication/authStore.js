@@ -20,6 +20,9 @@ export const useAuthStore = create((set) => ({
           console.log("Error has occured in login!");
           console.log(`Error: ${loginResult}`);
           set({ error: { title: loginResult.title, text: loginResult.text } });
+          setTimeout(() => {
+            set({ error: null });
+          }, 3000);
         } else {
           set({ userCredentials: loginResult });
         }
@@ -62,9 +65,9 @@ async function handleLogin(email, password) {
     );
     console.log("SUCCESS LOGIN");
     console.log("Is user verified?");
-    if (!userCredentials.user.emailVerified) {
-      return AuthError.fromLogin("auth/email-not-verified");
-    }
+    // if (!userCredentials.user.emailVerified) {
+    //   return AuthError.fromLogin("auth/email-not-verified");
+    // }
     return userCredentials;
   } catch (error) {
     console.log(error);

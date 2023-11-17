@@ -19,6 +19,7 @@ function Login() {
   const [isLoading, setLoading] = useState(false);
   const [isLoadingReset, setLoadingReset] = useState(false);
 
+  // to implement later (i need the icons)
   const toggleVisibility = () => {
     setVisibility(!isVisible);
   };
@@ -166,7 +167,7 @@ function Login() {
                   type={isVisible ? "text" : "password"}
                   autoComplete="current-password"
                   required
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow-700 bg-gray-100 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 py-1.5 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow-700 bg-gray-100 sm:text-sm sm:leading-6"
                 />
                 <label className="absolute right-2 top-1/2 transform -translate-y-1/2">
                   {isVisible ? (

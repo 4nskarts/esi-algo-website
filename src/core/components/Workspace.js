@@ -6,6 +6,7 @@ import { langs } from "@uiw/codemirror-extensions-langs";
 import { javascript } from "@codemirror/lang-javascript";
 import { vscodeDark } from "@uiw/codemirror-theme-vscode";
 import PreferenceNav from "./PreferenceNav";
+import { FiCpu } from "react-icons/fi";
 import {
   AiOutlineSetting,
   AiOutlineArrowUp,
@@ -31,7 +32,7 @@ function Workspace() {
             <button className="flex cursor-pointer items-center rounded focus:outline-none bg-dark-fill-3 text-dark-label-2 hover:bg-dark-fill-2  px-2 py-1.5 font-medium">
               <div className="flex items-center px-1">
                 <div className="text-xs flex items-center gap-2 hover:bg-gray-600 px-2 py-1 rounded-sm dark:text-dark-label-2">
-                  Python <AiOutlineArrowDown />
+                  Python <FiCpu />
                 </div>
               </div>
             </button>

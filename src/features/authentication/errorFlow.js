@@ -110,6 +110,6 @@ const authErrorMapping = {
   "auth/email-already-in-use": new AuthErrorEmailAlreadyInUse(),
   "auth/requires-recent-login": new AuthErrorRequiresRecentLogin(),
   "auth/no-current-user": new AuthErrorNoCurrentUser(),
-  "auth/email-not-verified": new AuthErrorEmailNotVerified(),
+  // "auth/email-not-verified": new AuthErrorEmailNotVerified(),
   "auth/too-many-requests": new AuthErrorTooManyRequests(),
 };
